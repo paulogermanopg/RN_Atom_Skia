@@ -82,11 +82,11 @@ const Litio = () => {
         />
 
         {/* Elétrons camada 1 */}
-        <Circle cx={electronK1.cx} cy={electronK1.cy} r={5} color="cyan" />
-        <Circle cx={electronK2.cx} cy={electronK2.cy} r={5} color="cyan" />
+        <Circle cx={electronK1.cx} cy={electronK1.cy} r={5} color="#00FFFF" />
+        <Circle cx={electronK2.cx} cy={electronK2.cy} r={5} color="#00FFFF" />
 
         {/* Elétron camada 2 */}
-        <Circle cx={electronL1.cx} cy={electronL1.cy} r={5} color="lime" />
+        <Circle cx={electronL1.cx} cy={electronL1.cy} r={5} color="#7FFF00" />
       </Canvas>
     </View>
   );
