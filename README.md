@@ -45,6 +45,7 @@ Neste projeto, foi realizado a criação de um desenho de um átomo de lítio, c
  
 5. Usaremos no decorrer do projeto, conceitos de trigonometria para realizar as animações dos elétrons em suas órbitas.
     - Não será necessário o estudo aprofundado em trigonometria, mas caso queira se aprofundar: https://brasilescola.uol.com.br/matematica/simetria-no-circulo-trigonometrico.htm
+    - <img src="trigonometria.png" width="300" />
 
   ## Para mais detalhes acesse meu vídeo tutorial em:
    [Tutorial em vídeo](https://www.youtube.com/watch?v=nV5rscEJCPs)
@@ -56,7 +57,7 @@ Neste projeto, foi realizado a criação de um desenho de um átomo de lítio, c
 ## Passo 1
 Clone o projeto
 ```bash
-git clone https://github.com/paulogermanopg/react-carousel-loop.git
+git clone https://github.com/paulogermanopg/RN_Atom_Skia.git
 ```
 ## Passo 2
 Instale os pacotes necessários
