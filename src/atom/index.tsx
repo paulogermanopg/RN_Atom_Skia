@@ -41,7 +41,7 @@ const Litio = () => {
   const angleK1 = useDerivedValue(() => (rotation1.value * Math.PI) / 180);
   const angleK2 = useDerivedValue(() => angleK1.value + Math.PI);
 
-  const r1 = 50; // raio da 1ª camada
+  const r1 = 50;
   const electronK1 = {
     cx: useDerivedValue(() => centerX + r1 * Math.cos(angleK1.value)),
     cy: useDerivedValue(() => centerY + r1 * Math.sin(angleK1.value)),
@@ -53,7 +53,7 @@ const Litio = () => {
 
   // Camada 2 - um elétron
   const angleL1 = useDerivedValue(() => (rotation2.value * Math.PI) / 180);
-  const r2 = 90; // raio da 2ª camada
+  const r2 = 90;
   const electronL1 = {
     cx: useDerivedValue(() => centerX + r2 * Math.cos(angleL1.value)),
     cy: useDerivedValue(() => centerY + r2 * Math.sin(angleL1.value)),
@@ -62,12 +62,12 @@ const Litio = () => {
   return (
     <View style={styles.container}>
       <Canvas style={styles.canvas}>
-        {/* Núcleo */}
+        {/* Nosso Núcleo */}
         <Circle cx={centerX - 8} cy={centerY + 6} r={10} color="#FFA500" />
         <Circle cx={centerX + 8} cy={centerY + 6} r={10} color="#FF8C00" />
         <Circle cx={centerX} cy={centerY - 6} r={10} color="#FFD700" />
 
-        {/* Órbitas desenhadas */}
+        {/* Órbitas das nossas camadas de valência */}
         <Path
           path={Skia.Path.Make().addCircle(centerX, centerY, r1)}
           color="rgba(255,255,255,0.2)"
@@ -81,11 +81,11 @@ const Litio = () => {
           strokeWidth={1}
         />
 
-        {/* Elétrons camada 1 */}
+        {/* Elétrons camada K */}
         <Circle cx={electronK1.cx} cy={electronK1.cy} r={5} color="#00FFFF" />
         <Circle cx={electronK2.cx} cy={electronK2.cy} r={5} color="#00FFFF" />
 
-        {/* Elétron camada 2 */}
+        {/* Elétron camada L */}
         <Circle cx={electronL1.cx} cy={electronL1.cy} r={5} color="#7FFF00" />
       </Canvas>
     </View>
