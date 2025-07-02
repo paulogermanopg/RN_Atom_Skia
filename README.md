@@ -48,8 +48,8 @@ Neste projeto, foi realizado a criação de um desenho de um átomo de lítio, c
     - <img src="trigonometria.png" width="300" />
 
   ## Para mais detalhes acesse meu vídeo tutorial em:
-   [Tutorial em vídeo](https://www.youtube.com/watch?v=nV5rscEJCPs)
-
+   [Tutorial em vídeo Parte 01](https://www.youtube.com/watch?v=Ko15MtuEEzY)
+ 
 ## Prévia
 <img src="atomgif.gif" width="300" />
 
